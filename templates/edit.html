@@ -12,14 +12,6 @@
             <input type="text" name="details" class="form-control" value="{{ task.details }}" required>
         </div>
         <button type="submit" class="btn btn-success">更新</button>
-<h1>タスクの編集</h1>
-<div class="form">
-    <form action="/edit/{{ task.id }}" method="POST">
-        <label for="title">Title</label>
-        <input type="text" name="title" value="{{ task.title }}" />
-        <label for="details">Details</label>
-        <input type="text" name="details" value="{{ task.details }}" />
-        <input type="submit" value="Update" />
     </form>
 </div>
 {% endblock %}

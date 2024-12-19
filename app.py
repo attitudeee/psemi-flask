@@ -45,8 +45,7 @@ def edit(id):
         task.details = request.form.get('details')
         db.session.commit()
         return redirect('/')
-
-      # GETリクエスト時は編集画面を表示
+    # GETリクエスト時は編集画面を表示
     return render_template('edit.html', task=task)
 
 if __name__ == "__main__":
